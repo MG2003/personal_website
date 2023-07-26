@@ -4,6 +4,7 @@ import BadURL from '../pages/404'
 import Home from '../pages/home';
 import Experience from '../pages/exp';
 import Projects from '../pages/projects';
+import Experimental from '../pages/experimental';
 
 //Root Layout
 import Root from '../layouts/RootLayout';
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
           {
             path: "projects",
             element: <Projects />
+          },
+          {
+            path: "fun",
+            element: <Experimental/>
           }
         ]
   
