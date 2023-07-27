@@ -1,4 +1,4 @@
-interface projData{
+export interface projData{
     title: string;
     path: string;
     link: string;
@@ -6,7 +6,7 @@ interface projData{
     tags: string[];
 }
 
-export const projects: projData[] = [
+export const games: projData[] = [
     {
         title: "Kebash!",
         path: "kebash.png",
