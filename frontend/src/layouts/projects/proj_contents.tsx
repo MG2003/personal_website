@@ -12,14 +12,14 @@ export const games: projData[] = [
         path: "kebash.png",
         link: "https://brownrisdgames.itch.io/kebash",
         desc: "blah blah blah",
-        tags: ["hi", "does this work"]
+        tags: ["hi", "does this work", "unity"]
     },
     {
         title: "US(F)PS",
         path: "usfps.png",
         link: "https://brownrisdgames.itch.io/usfps",
         desc: "usfps description",
-        tags: ["fun!"]
+        tags: ["fun!", "unreal", "unity"]
     }
 
 ]
