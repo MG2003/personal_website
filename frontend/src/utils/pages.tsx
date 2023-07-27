@@ -10,5 +10,9 @@ export const pages:  { title: string, path: string}[] = [
     {
         title: "projects",
         path: "/projects"
+    },
+    {
+        title: "fun",
+        path: "/fun"
     }
 ]

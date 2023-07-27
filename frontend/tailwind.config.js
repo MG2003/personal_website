@@ -12,6 +12,7 @@ export default {
         'poptart': '#ffd9d6',
         'secondary': '#140b42',
         'darkbg': '#ff6a61',
+        'unity': '#78c28c'
 
       }
     },

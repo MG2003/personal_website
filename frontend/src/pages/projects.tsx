@@ -1,11 +1,8 @@
-
+import ProjectTable from "../layouts/projects/projectTable";
 function Projects(){
     return(
-        <div>
-            projects
-        </div>
-
-    );
+        <ProjectTable/>
+        );
 }
 
 export default Projects;
