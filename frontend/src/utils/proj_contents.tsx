@@ -6,7 +6,9 @@ export interface projData{
     tags: string[];
 }
 
-export const games: projData[] = [
+
+
+const games: projData[] = [
     {
         title: "Kebash!",
         path: "kebash.png",
@@ -22,4 +24,11 @@ export const games: projData[] = [
         tags: ["fun!", "unreal", "unity"]
     }
 
+]
+
+export const categories: { title: string, contents: projData[] }[] = [
+    {
+        title: "games",
+        contents: games
+    }
 ]
