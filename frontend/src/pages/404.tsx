@@ -4,7 +4,7 @@ export default function BadURL(){
     const error = useRouteError();
     console.error(error)
     return(
-        <div className = "text-center bg-offwhite min-h-screen flex align-middle">
+        <div className = "text-center bg-primary min-h-screen flex align-middle">
             <div className = "m-auto">
                 <h1 className = "text-xl">Oopsie poopsie you did a woopsie</h1>
                 <p className = "my-3">
@@ -13,7 +13,7 @@ export default function BadURL(){
                         (error as { statusText?: string })?.statusText}
                     </i>
                 </p>
-                <Link to = ".." className = "bg-black text-offwhite py-1 px-3 my-3">Go back!</Link>
+                <Link to = ".." className = "bg-black text-primary py-1 px-3 my-3">Go back!</Link>
             </div>
         </div>
     );

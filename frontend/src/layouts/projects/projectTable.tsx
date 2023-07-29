@@ -17,7 +17,7 @@ export default function ProjectTable({props, title}:data_Array){
             <div className = "inline-flex">
                 {props.map((project: projData) => 
                     <a href= {project.link} target= "_blank" 
-                        className = "bg-gray-100 p-4 m-4 transition ease-in delay-100 hover:bg-gray-200 hover:scale-105 flex-col hover:shadow-dft border-black border-2">          
+                        className = "bg-highlight p-4 m-4 transition ease-in delay-100 hover:scale-105 flex-col hover:shadow-dft border-black border-2">          
                         <div className = "min-h flex-grow">
                             <img src = {imageFolder + project.path} className = "max-w-sm"/>
                         </div>

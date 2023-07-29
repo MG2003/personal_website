@@ -15,7 +15,7 @@ export default function Tags( {tagArr} : TagsProps){
         {
         tagArr.map((tag: string) => 
             <div className =  {TAG_CLASS + "bg-black"}>
-              <p className = "text-white">{tag}</p>
+              <p className = "text-primary">{tag}</p>
             </div>)
     }   
     </div>
