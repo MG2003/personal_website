@@ -4,15 +4,17 @@ export default function BadURL(){
     const error = useRouteError();
     console.error(error)
     return(
-        <div className = "text-center">
-            <h1>Oopsie poopsie you did a woopsie</h1>
-            <p>
-            <i>
-                {(error as Error)?.message ||
-                    (error as { statusText?: string })?.statusText}
-                </i>
-            </p>
-            <Link to = "..">Go back!</Link>
+        <div className = "text-center bg-offwhite min-h-screen flex align-middle">
+            <div className = "m-auto">
+                <h1 className = "text-xl">Oopsie poopsie you did a woopsie</h1>
+                <p className = "my-3">
+                <i>
+                    {(error as Error)?.message ||
+                        (error as { statusText?: string })?.statusText}
+                    </i>
+                </p>
+                <Link to = ".." className = "bg-black text-offwhite py-1 px-3 my-3">Go back!</Link>
+            </div>
         </div>
     );
 }

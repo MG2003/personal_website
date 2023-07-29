@@ -8,14 +8,15 @@ export default {
     extend: {
       colors: {
 
-        'bg': '#ffc3bf',
-        'poptart': '#ffd9d6',
-        'secondary': '#140b42',
-        'darkbg': '#ff6a61',
-        'unity': '#78c28c',
-        'unreal': '#7f8ddb',
+        'primary': '#ffc3bf',
+        'secondary': '#f5f5f5',
+        'offwhite': '#f5f5f5'
 
-      }
+      },
+      boxShadow:{
+        'dft': '10px 10px 0px 0px rgba(0, 0, 0, 1)',
+        'sml': '7px 7px 0px 0px rgba(0, 0, 0, 1)',
+      },
     },
   },
   plugins: [],

@@ -6,8 +6,6 @@ export interface projData{
     tags: string[];
 }
 
-
-
 const games: projData[] = [
     {
         title: "Kebash!",
@@ -28,7 +26,7 @@ const games: projData[] = [
 
 export const categories: { title: string, contents: projData[] }[] = [
     {
-        title: "games",
+        title: "Games",
         contents: games
     }
 ]

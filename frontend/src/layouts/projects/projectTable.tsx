@@ -16,11 +16,12 @@ export default function ProjectTable({props, title}:data_Array){
             <p className = "text-xl font-bold">{title}</p>
             <div className = "inline-flex">
                 {props.map((project: projData) => 
-                    <a href= {project.link} target= "_blank" className = "bg-gray-100 rounded-md p-3 m-3 transition ease-in delay-100 hover:bg-gray-200 hover:scale-105 flex-col">          
+                    <a href= {project.link} target= "_blank" 
+                        className = "bg-gray-100 p-4 m-4 transition ease-in delay-100 hover:bg-gray-200 hover:scale-105 flex-col hover:shadow-dft border-black border-2">          
                         <div className = "min-h flex-grow">
-                            <img src = {imageFolder + project.path} className = "rounded-md max-w-sm"/>
+                            <img src = {imageFolder + project.path} className = "max-w-sm"/>
                         </div>
-                        <div className = "flex-shrink">
+                        <div className = "flex-shrink my-2">
                             <p className = "font-bold mb-1">{project.title}</p>
                             <Tags tagArr= {project.tags}/>
                         </div>              
@@ -30,5 +31,6 @@ export default function ProjectTable({props, title}:data_Array){
         </div>
     )
 }
+
 
 

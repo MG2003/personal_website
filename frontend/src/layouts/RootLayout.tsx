@@ -8,7 +8,7 @@ export default function Root() {
     return (
       <div className = "flex min-h-screen">
         <Sidebar/>
-        <main className = "p-16 flex-grow">
+        <main className = "p-16 flex-grow bg-offwhite">
           <Outlet/>
         </main>
        
@@ -18,9 +18,9 @@ export default function Root() {
 
   function Sidebar(){
     return(
-    <div className = "block bg-blue-200">
+    <div className = "block bg-black">
       <header>
-        <h1 className = "text-3xl font-bold"><Link to= "/">Max Guo</Link></h1>
+        <h1 className = "text-3xl font-bold text-offwhite p-3"><Link to= "/">Max Guo</Link></h1>
       </header>
       <Navigation/>
       <Foot/>
@@ -30,22 +30,22 @@ export default function Root() {
 
   function Foot(){
     return(
-      <footer className = "bg-orange-500 p-2">
+      <footer className = "text-sm text-offwhite p-3">
         <p>Made with React and Tailwind</p>
       </footer>
     )
   }
 
   function Navigation(){
-    const nav_class: string = " block p-3 rounded-lg my-3 "
+    const nav_class: string = " block p-3 my-4 min-w-md border-offwhite border-2"
     return(
-      <ul className = "p-2">
+      <ul className = "p-4">
         {pages.map((page, index) => 
           <NavLink 
             key = {index} 
             to={page.path}
             className = {({ isActive }) =>
-              isActive ? "font-bold bg-orange-500" + nav_class : "bg-purple-400 hover:bg-orange-500 transition-colors ease-in" + nav_class
+              isActive ? "font-bold bg-black text-offwhite" + nav_class : "bg-offwhite hover:bg-black hover:text-offwhite transition-colors ease-in" + nav_class
           }>
 
               {page.title}
