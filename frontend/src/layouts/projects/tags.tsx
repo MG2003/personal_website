@@ -14,8 +14,8 @@ export default function Tags( {tagArr} : TagsProps){
    <div className = "inline-flex">
         {
         tagArr.map((tag: string) => 
-            <div className =  {TAG_CLASS + "bg-black"}>
-              <p className = "text-primary">{tag}</p>
+            <div className =  {TAG_CLASS + "bg-secondary"}>
+              <p className = "text-highlight">{tag}</p>
             </div>)
     }   
     </div>

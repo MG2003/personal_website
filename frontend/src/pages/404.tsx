@@ -13,7 +13,7 @@ export default function BadURL(){
                         (error as { statusText?: string })?.statusText}
                     </i>
                 </p>
-                <Link to = ".." className = "bg-black text-primary py-1 px-3 my-3">Go back!</Link>
+                <Link to = ".." className = "bg-secondary text-primary py-1 px-3 my-3">Go back!</Link>
             </div>
         </div>
     );

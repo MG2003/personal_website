@@ -7,11 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-
+        
         'primary': '#ffa399',
         'highlight': '#ffccc9',
-        'secondary': '#f5f5f5',
+        'secondary': '#000000',
         'offwhite': '#f5f5f5'
+        
 
       },
       boxShadow:{

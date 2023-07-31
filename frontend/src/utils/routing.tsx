@@ -7,7 +7,7 @@ import Projects from '../pages/projects';
 import Experimental from '../pages/experimental';
 
 //Root Layout
-import Root from '../layouts/RootLayout';
+import Root from '../layouts/root/RootLayout';
 
 //Browser Router
 import { createBrowserRouter } from 'react-router-dom';
