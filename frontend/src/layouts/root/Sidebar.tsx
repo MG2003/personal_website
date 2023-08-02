@@ -3,10 +3,10 @@ import { Link, NavLink } from "react-router-dom";
 
 export default function Sidebar(){
     return(
-    <div className = "block bg-secondary w-72 fixed h-full">
+    <div className = "block bg-primary w-72 fixed h-full ">
 
       <header>
-        <h1 className = "text-3xl font-bold text-primary px-6 py-3 hover:italic mb-3"><Link to= "/">Max Guo</Link></h1>
+        <h1 className = "text-3xl font-bold text-secondary px-6 py-3 hover:italic mb-3"><Link to= "/">Max Guo</Link></h1>
       </header>
       <Navigation/>
       <Foot/>
@@ -15,7 +15,7 @@ export default function Sidebar(){
   }
 
   function Navigation(){
-    const nav_class: string = " block p-3 mb-4 min-w-md border-primary border-2"
+    const nav_class: string = " block p-3 mb-4 min-w-md text-secondary border-primary border-2"
     return(
       <ul className = "p-4">
         {pages.map((page, index) => 
@@ -23,7 +23,7 @@ export default function Sidebar(){
             key = {index} 
             to={page.path}
             className = {({ isActive }) =>
-              isActive ? "font-bold bg-secondary text-primary" + nav_class : "bg-primary hover:bg-secondary hover:text-primary" + nav_class
+              isActive ? "font-bold bg-primary text-secondary border-secondary" + nav_class :  "hover:border-2 hover:border-secondary" + nav_class
           }>
 
               {page.title}
@@ -35,7 +35,7 @@ export default function Sidebar(){
 
   function Foot(){
     return(
-      <footer className = "text-sm text-primary p-3 bottom-auto">
+      <footer className = "text-sm text-secondary p-3 bottom-auto">
         <p>Made with React and Tailwind</p>
       </footer>
     )

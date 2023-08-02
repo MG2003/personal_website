@@ -21,10 +21,8 @@ function Experience(){
    
     return(
         <div>
-            <h1 className = "text-8xl mb-4">Experience</h1>
-
             <Navbar/>
-        
+            <div className = "p-2">
             <section className = "mb-3" id = "education">
                 <SectionHead txt = {"Education"}/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo in vitae turpis massa sed elementum tempus egestas. Volutpat blandit aliquam etiam erat velit scelerisque in dictum. Morbi tristique senectus et netus et malesuada. Maecenas ultricies mi eget mauris pharetra et ultrices neque. Urna id volutpat lacus laoreet non curabitur gravida. Est lorem ipsum dolor sit amet. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Gravida rutrum quisque non tellus orci ac auctor augue. Purus semper eget duis at tellus. Nunc sed augue lacus viverra vitae congue eu consequat ac.
@@ -64,11 +62,13 @@ Feugiat in ante metus dictum at tempor commodo. Sit amet luctus venenatis lectus
 
 Bibendum est ultricies integer quis auctor elit sed vulputate mi. Ut eu sem integer vitae justo eget. Enim eu turpis egestas pretium aenean pharetra magna ac placerat. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Arcu ac tortor dignissim convallis aenean et tortor at risus. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Pulvinar elementum integer enim neque. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Proin nibh nisl condimentum id venenatis a. Ultricies integer quis auctor elit sed. Sed felis eget velit aliquet sagittis id consectetur purus ut. Duis at tellus at urna condimentum mattis pellentesque id. Quis enim lobortis scelerisque fermentum dui. Leo in vitae turpis massa sed elementum tempus egestas.</p>
             </section>
-
-
             <div>
                 Resume in pdf form: <a href="/other_files/Resume-1.pdf" download className = "bg-secondary text-primary hover:bg-transparent hover:text-secondary hover:border-b-2 hover:border-b-secondary">download</a>
             </div>
+            </div>
+
+
+           
         </div>
 
     );
@@ -85,10 +85,10 @@ function Navbar(){
     /* sections should include the basic resume stuff, I'll refactor later, 
     */
    return(
-    <ul className = "text-xl mb-4" >
+    <ul className = "pt-4 text-xl mb-4 sticky top-0 bg-black border-b-secondary border-b-2" >
         {categories.map((category: resumeCategory, index) =>
-        <li key = {index} className = "inline mr-3">
-            <ScrollLink to = {category.path} spy = {true} smooth = {true} activeClass = "font-bold" duration = {500} hashSpy= {true}>{category.name}</ScrollLink></li>
+        <li key = {index} className = "inline p-2">
+            <ScrollLink to = {category.path} spy = {true} smooth = {true} activeClass = "font-bold" duration = {600} hashSpy= {true} offset = {-50}>{category.name}</ScrollLink></li>
         )}
     </ul>
    );

@@ -8,9 +8,10 @@ export default {
     extend: {
       colors: {
         
-        'primary': '#ffa399',
-        'highlight': '#ffccc9',
-        'secondary': '#000000',
+        'primary': '#000000',
+        'highlight': '#000000',
+        //'highlight': '#ffccc9',
+        'secondary': '#ffa399',
         'offwhite': '#f5f5f5'
         
 
