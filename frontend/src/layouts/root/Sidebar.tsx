@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 export default function Sidebar(){
     return(
-    <div className = "block bg-primary w-72 fixed h-full ">
+    <div className = "block bg-primary w-72 fixed h-full my-auto">
 
       <header>
         <h1 className = "text-3xl font-bold text-secondary px-6 py-3 hover:italic mb-3"><Link to= "/">Max Guo</Link></h1>

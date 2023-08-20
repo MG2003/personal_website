@@ -7,5 +7,9 @@
 *{
 
     font-family: 'Space Mono', monospace;
-    background-color: '#ffa399';
+    background: #16151F;
+}
+
+p{
+background: transparent;
 }

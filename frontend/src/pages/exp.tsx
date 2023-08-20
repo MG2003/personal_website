@@ -1,4 +1,4 @@
-import {Link as ScrollLink} from "react-scroll";
+
 const categories:resumeCategory[] = [
     {
         name: "Education",
@@ -22,7 +22,7 @@ function Experience(){
     return(
         <div>
             <Navbar/>
-            <div className = "p-2">
+            <div className = "p-2 overflow-y-scroll h-96 pt-4">
             <section className = "mb-3" id = "education">
                 <SectionHead txt = {"Education"}/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo in vitae turpis massa sed elementum tempus egestas. Volutpat blandit aliquam etiam erat velit scelerisque in dictum. Morbi tristique senectus et netus et malesuada. Maecenas ultricies mi eget mauris pharetra et ultrices neque. Urna id volutpat lacus laoreet non curabitur gravida. Est lorem ipsum dolor sit amet. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Gravida rutrum quisque non tellus orci ac auctor augue. Purus semper eget duis at tellus. Nunc sed augue lacus viverra vitae congue eu consequat ac.
@@ -85,10 +85,10 @@ function Navbar(){
     /* sections should include the basic resume stuff, I'll refactor later, 
     */
    return(
-    <ul className = "pt-4 text-xl mb-4 sticky top-0 bg-black border-b-secondary border-b-2" >
+    <ul className = "pt-1 text-xl relative top-0 bg-secondary text-primary border-b-secondary border-b-2" >
         {categories.map((category: resumeCategory, index) =>
-        <li key = {index} className = "inline p-2">
-            <ScrollLink to = {category.path} spy = {true} smooth = {true} activeClass = "font-bold" duration = {600} hashSpy= {true} offset = {-50}>{category.name}</ScrollLink></li>
+        <li key = {index} className = "inline p-2 bg-transparent">
+            {category.name}</li>
         )}
     </ul>
    );
