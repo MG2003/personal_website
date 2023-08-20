@@ -1,9 +1,9 @@
 import { pages } from "../../utils/pages";
 import { Link, NavLink } from "react-router-dom";
 
-export default function Sidebar(){
+export default function Topbar(){
     return(
-    <div className = " text-lg w-screen top-0 sticky h-full my-auto flex bg-primary z-50 px-4 border-secondary border-b-2">
+    <div className = " text-lg w-screen top-0 sticky h-full my-auto flex bg-primary z-50 px-4 border-secondary border-y-2">
       <header>
         <h1 className = "font-bold text-secondary hover:italic"><Link to= "/">Max Guo</Link></h1>
       </header>

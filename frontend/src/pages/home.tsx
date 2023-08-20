@@ -5,7 +5,7 @@ export default function Home(){
     return(
         <div>
             <div className = "mb-4">
-                <h1 className = "text-8xl font-bold">Hi! I'm Max</h1>
+                <h1 className = "text-8xl font-bold my-auto">Hi! I'm Max</h1>
                 <p className = "text-4xl">Welcome to my website :)</p>
             </div>
             <div>

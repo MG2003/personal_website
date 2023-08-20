@@ -14,7 +14,7 @@
 }
 
 .nav {
-    @apply text-secondary ml-4
+    @apply text-secondary ml-4 hover:italic;
 }
 
 :root{
@@ -25,4 +25,14 @@
 
 p{
 background: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }

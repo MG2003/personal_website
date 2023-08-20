@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
-import Sidebar from "./Sidebar";
+import Topbar from "./Topbar";
 
 
 export default function Root() {
     return (
-      <div className = "text-secondary overflow-hidden">
-        <Sidebar/>
+      <div className = "text-secondary ">
+        <Topbar/>
         <div className = "p-8">
-          <div className = " bg-primary border-2 border-secondary h-[36rem]">
+          <div className = " bg-primary h-[36rem] border-secondary border-solid border-2">
             <Outlet/>
           </div>
           <Foot/>
@@ -20,7 +20,7 @@ export default function Root() {
 
   function Foot(){
     return(
-      <footer className = "text-sm text-secondary bottom-auto">
+      <footer className = "text-sm text-secondary">
         <p>Made with React and Tailwind</p>
       </footer>
     )
