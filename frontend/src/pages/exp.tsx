@@ -20,9 +20,9 @@ function Experience(){
     */
    
     return(
-        <div>
+        <div className = "h-[36rem]">
             <Navbar/>
-            <div className = "p-2 overflow-y-scroll h-96 pt-4">
+            <div className = "p-2 pt-4 overflow-y-scroll">
             <section className = "mb-3" id = "education">
                 <SectionHead txt = {"Education"}/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo in vitae turpis massa sed elementum tempus egestas. Volutpat blandit aliquam etiam erat velit scelerisque in dictum. Morbi tristique senectus et netus et malesuada. Maecenas ultricies mi eget mauris pharetra et ultrices neque. Urna id volutpat lacus laoreet non curabitur gravida. Est lorem ipsum dolor sit amet. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Gravida rutrum quisque non tellus orci ac auctor augue. Purus semper eget duis at tellus. Nunc sed augue lacus viverra vitae congue eu consequat ac.

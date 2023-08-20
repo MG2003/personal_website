@@ -4,13 +4,24 @@ import Sidebar from "./Sidebar";
 
 export default function Root() {
     return (
-      <div className = "flex min-h-screen text-secondary p-16">
+      <div className = "text-secondary overflow-hidden">
         <Sidebar/>
-          <div className = "flex-grow bg-primary ml-72 border-2 border-secondary h-full min-h-96">
+        <div className = "p-8">
+          <div className = " bg-primary border-2 border-secondary h-[36rem]">
             <Outlet/>
           </div>
+          <Foot/>
+        </div>
       </div>
     )
   }
 
   
+
+  function Foot(){
+    return(
+      <footer className = "text-sm text-secondary bottom-auto">
+        <p>Made with React and Tailwind</p>
+      </footer>
+    )
+  }

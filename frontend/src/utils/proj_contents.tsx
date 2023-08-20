@@ -1,14 +1,16 @@
 export interface projData{
     title: string;
+    category: string;
     path: string;
     link: string;
     desc: string;
     tags: string[];
 }
 
-const games: projData[] = [
+export const projects: projData[] = [
     {
         title: "Kebash!",
+        category: "Games",
         path: "kebash.png",
         link: "https://brownrisdgames.itch.io/kebash",
         desc: "blah blah blah",
@@ -16,17 +18,11 @@ const games: projData[] = [
     },
     {
         title: "US(F)PS",
+        category: "Games",
         path: "usfps.png",
         link: "https://brownrisdgames.itch.io/usfps",
         desc: "usfps description",
         tags: ["fun!", "unreal", "unity"]
     }
 
-]
-
-export const categories: { title: string, contents: projData[] }[] = [
-    {
-        title: "Games",
-        contents: games
-    }
 ]
