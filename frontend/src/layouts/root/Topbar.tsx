@@ -7,9 +7,9 @@ export default function Topbar(){
       <header>
         <h1 className = "font-bold text-secondary hover:italic"><Link to= "/">Max Guo</Link></h1>
       </header>
-      <Navigation/>
+      
       <div className = "ml-auto">
-        <p>linx</p>
+        <Navigation/>
       </div>
 
 
