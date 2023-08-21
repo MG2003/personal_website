@@ -17,7 +17,7 @@ export default {
 
       },
       boxShadow:{
-        'dft': '10px 10px 0px 0px rgba(255, 124, 110, 1)',
+        'dft': '10px 10px 0px 0px rgba(255, 163, 153, 1)',
         'sml': '7px 7px 0px 0px rgba(0, 0, 0, 1)',
       },
     },

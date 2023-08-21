@@ -23,6 +23,14 @@ export const projects: projData[] = [
         link: "https://brownrisdgames.itch.io/usfps",
         desc: "usfps description",
         tags: ["fun!", "unreal", "unity"]
+    },
+    {
+        title: "Focus Campfire",
+        category: "Hackathons",
+        path: "Fire3.gif",
+        link: "https://devpost.com/software/focus-campfire",
+        desc: "stuf",
+        tags: ["HTML/CSS/Javascript"]
     }
 
 ]
