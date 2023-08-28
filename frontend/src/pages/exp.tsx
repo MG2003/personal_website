@@ -66,14 +66,3 @@ function Navbar(){
 
 }
 export default Experience;
-
-
-interface headstr{
-    txt: string
-}
-
-function SectionHead({txt}: headstr){
-    return(
-    <h1 className = "text-3xl">{txt}</h1>
-    );
-}
