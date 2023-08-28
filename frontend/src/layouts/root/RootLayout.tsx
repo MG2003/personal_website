@@ -7,7 +7,7 @@ export default function Root() {
       <div className = "text-secondary ">
         <Topbar/>
         <div className = "p-8">
-          <div className = " bg-primary h-[36rem] border-secondary border-solid border-2">
+          <div className = " bg-primary h-[36.175rem] pb-1">
             <Outlet/>
           </div>
           <Foot/>

@@ -3,7 +3,15 @@ import About from '../pages/about';
 import BadURL from '../pages/404'
 import Home from '../pages/home';
 import Experience from '../pages/exp';
+//experience subcategories
+import Education from '../pages/experience_sections/edu';
+import Work from '../pages/experience_sections/work';
+import Skills from '../pages/experience_sections/skills';
+
+
 import Projects from '../pages/projects';
+//Individual project pages
+import ProjectPage from '../pages/projectPage';
 import Experimental from '../pages/experimental';
 
 //Root Layout
@@ -28,11 +36,29 @@ export const router = createBrowserRouter([
           },
           {
             path: "experience",
-            element: <Experience/>
+            element: <Experience/>,
+            children: [
+              {
+                path: "education",
+                element: <Education/>
+              },
+              {
+                path: "work",
+                element: <Work/>
+              },
+              {
+                path: "skills",
+                element: <Skills/>
+              }
+            ]
           },
           {
             path: "projects",
             element: <Projects />
+          },
+          {
+            path: "projects/:projectId",
+            element:<ProjectPage/>
           },
           {
             path: "fun",

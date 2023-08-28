@@ -6,13 +6,8 @@
 
 
 .activenav {
-    @apply font-bold bg-primary border-secondary;
+    @apply font-bold;
   }
-
-.inactivenav {
-    @apply border-primary;
-}
-
 .nav {
     @apply text-secondary ml-4 hover:italic;
 }

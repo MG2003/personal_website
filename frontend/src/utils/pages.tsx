@@ -5,7 +5,7 @@ export const pages:  { title: string, path: string}[] = [
     },
     {
         title: "experience",
-        path: "/experience"
+        path: "/experience/education"
     },
     {
         title: "projects",
