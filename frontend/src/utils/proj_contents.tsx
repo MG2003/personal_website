@@ -15,8 +15,8 @@ export const projects: projData[] = [
         pagepath: "kebash",
         imgpath: "kebash.png",
         link: "https://brownrisdgames.itch.io/kebash",
-        desc: "blah blah blah",
-        tags: ["hi", "does this work", "unity"]
+        desc: "Multiplayer party game",
+        tags: ["Unity", "C#"]
     },
     {
         title: "US(F)PS",
@@ -24,8 +24,8 @@ export const projects: projData[] = [
         pagepath: "usfps",
         imgpath: "usfps.png",
         link: "https://brownrisdgames.itch.io/usfps",
-        desc: "usfps description",
-        tags: ["fun!", "unreal", "unity"]
+        desc: "Procedurally generated FPS autorunner",
+        tags: ["Unreal Engine"]
     },
     {
         title: "Focus Campfire",
@@ -33,8 +33,8 @@ export const projects: projData[] = [
         pagepath: "focuscampfire",
         imgpath: "Fire3.gif",
         link: "https://devpost.com/software/focus-campfire",
-        desc: "stuf",
-        tags: ["HTML/CSS/Javascript"]
+        desc: "Google extension for managing productivity, built for Hack@Brown 2023",
+        tags: ["HTML/CSS/Javascript", "Chrome API"]
     }
 
 ]
