@@ -1,5 +1,5 @@
 import { projects } from "../utils/proj_contents";
-import { useParams } from "react-router-dom";
+import { useParams, Link} from "react-router-dom";
 import Tags from "../layouts/projects/tags";
 
 const imageFolder: string = "/images/projects/";
@@ -16,6 +16,7 @@ export default function ProjectPage(){
     else{
         return(
             <div>
+                <Link to = "../">Back</Link>
                 <h1 className = "text-xl">{project.title}</h1>
                 <img src = {imageFolder + project.imgpath} className = "max-w-md"></img>
                 <Tags tagArr= {project.tags}/>
