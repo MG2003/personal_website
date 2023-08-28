@@ -16,7 +16,7 @@ export default function ProjectPage(){
     else{
         return(
             <div>
-                <Link to = "../">Back</Link>
+                <Link to = "/projects">Back</Link>
                 <h1 className = "text-xl">{project.title}</h1>
                 <img src = {imageFolder + project.imgpath} className = "max-w-md"></img>
                 <Tags tagArr= {project.tags}/>

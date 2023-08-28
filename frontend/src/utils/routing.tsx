@@ -54,7 +54,7 @@ export const router = createBrowserRouter([
           },
           {
             path: "projects",
-            element: <Projects />
+            element: <Projects />,
           },
           {
             path: "projects/:projectId",
