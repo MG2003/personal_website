@@ -2,10 +2,6 @@ import { Outlet, NavLink } from "react-router-dom";
 
 const categories:resumeCategory[] = [
     {
-        name: "Education",
-        path: "education"
-    },
-    {
         name: "Work",
         path: "work"
     },

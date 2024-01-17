@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 export default function Home(){
     /*Basic explanation of what this page is about */
-    
+    /*
     return(
         <div>
             <div className = "mb-4">
@@ -20,5 +20,10 @@ export default function Home(){
                 <p>This little corner of the internet is for me to tinker with webdev</p>
             </div>
         </div>
-    );
+    );*/
+    return(
+        <div>
+            Hi! This is under construction right now
+        </div>
+    )
 }

@@ -30,7 +30,7 @@ export default function ProjectPage(){
         <div className = "flex">
             <div>
                 <div className = "p-2 bg-secondary text-primary h-fit hover:bg-primary hover:text-secondary mb-6"><Link to = "/projects" >Back</Link></div>
-                <div>
+                <div className = " justify-center">
                     <Link to = {"/projects/" + backpath} className = "p-2 bg-secondary text-primary h-fit hover:bg-primary hover:text-secondary ">{"<-"}</Link>
                     <Link to = {"/projects/" + nextpath} className = "p-2 bg-secondary text-primary h-fit hover:bg-primary hover:text-secondary ">{"->"}</Link>
                 </div>
@@ -40,10 +40,11 @@ export default function ProjectPage(){
                 <div className = "mb-4">
                     <Tags tagArr= {project.tags} />
                 </div>
-                <img src = {imageFolder + project.imgpath} className = "max-w-md"></img>
-                
-                <p>{project.desc}</p>
-                <a href = {project.link} target = "_blank">Link</a>
+                <img src = {imageFolder + project.imgpath} className = "max-w-sm md:max-w-md"></img>
+                <div className = "py-2 mb-2">
+                    <p>{project.desc}</p>
+                </div>
+                <a href = {project.link} target = "_blank" className = "bg-secondary p-1 text-primary hover:bg-primary hover:text-secondary">Link</a>
             </div>
 
         </div>

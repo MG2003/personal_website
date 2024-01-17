@@ -4,7 +4,6 @@ import BadURL from '../pages/404'
 import Home from '../pages/home';
 import Experience from '../pages/exp';
 //experience subcategories
-import Education from '../pages/experience_sections/edu';
 import Work from '../pages/experience_sections/work';
 import Skills from '../pages/experience_sections/skills';
 
@@ -38,10 +37,6 @@ export const router = createBrowserRouter([
             path: "experience",
             element: <Experience/>,
             children: [
-              {
-                path: "education",
-                element: <Education/>
-              },
               {
                 path: "work",
                 element: <Work/>
